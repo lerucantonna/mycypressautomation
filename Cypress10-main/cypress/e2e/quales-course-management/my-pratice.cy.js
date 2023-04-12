@@ -22,8 +22,9 @@ describe('This is a login test suite for the  Quales course  management system',
      cy.contains('Login Successful').should('be.visible')
      cy.contains('List of Courses').should('be.visible')
      cy.get('.MuiGrid-root > .MuiButtonBase-root').click();
-     cy.get('[data-testid="Title*"]')
-     cy.get('[data-testid="Description*"]').type('my cypress class');
+     cy.viewport('macbook-16');
+     cy.get('[data-testid="Title*"]').type('OLUMIDE CYPRESS ASSIGNMENT')
+     cy.get(':nth-child(2) > .MuiFormControl-root > .MuiInputBase-root').type('cypress creates course')
      cy.get('#demo-simple-select').click();
      cy.get('[data-value="2"]').click();
      cy.get('.css-tzsjye > :nth-child(4)').click();
