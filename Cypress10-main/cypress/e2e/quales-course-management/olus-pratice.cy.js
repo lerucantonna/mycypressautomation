@@ -30,7 +30,6 @@ describe('This is a login test suite for the  Quales course  management system',
      cy.get('[data-value="3"]').click();
      cy.get('[data-testid="isPremium"]').click();
      cy.get(':nth-child(4) > .MuiTypography-root').click();
-     cy.get('[data-testid="offline"]').click();
      cy.get('[data-testid="ImageURL"]').type('"https://source.unsplash.com/user/c_v_r/900x800",');
      cy.get('[data-testid="online"]').click();
      cy.get('[data-testid="CourseURL*(mustbeyoutube)"]').type('"https://www.youtube.com/watch?v=8vXoMqWgbQQ",');
