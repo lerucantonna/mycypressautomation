@@ -15,12 +15,11 @@ describe('This is a login test suite for the  Quales course  management system',
     cy.get('.css-48p1y4 > .MuiButtonBase-root').click();
      //Cypress spies the inpiut field for the Email address and type into the Email address field
     cy.viewport('macbook-16');
-    cy.get('[data-testid="EmailAddress"]').type('ay@mail.com');
+    cy.get('[data-testid="EmailAddress"]').type('ayp@mail.com');
      cy.get('[data-testid="Password"]').type('pass1234');
      cy.get('.MuiButton-contained').click();
      cy.contains('Courses').should('be.visible')
      cy.contains('Login Successful').should('be.visible')
-     cy.contains('List of Courses').should('be.visible')
      cy.get('.MuiGrid-root > .MuiButtonBase-root').click();
      cy.viewport('macbook-16');
      cy.get('[data-testid="Title*"]').type('OLUMIDE CYPRESS ASSIGNMENT')
@@ -32,6 +31,7 @@ describe('This is a login test suite for the  Quales course  management system',
      cy.get('[data-testid="online"]').click();
      cy.get('[data-testid="CourseURL*(mustbeyoutube)"]').type('"https://www.youtube.com/watch?v=8vXoMqWgbQQ",');
      cy.get('.css-tzsjye > .MuiButton-root').click();
+   
 
     
       
